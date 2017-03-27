@@ -1,0 +1,20 @@
+# PHP源码笔记
+
+## 1.准备阶段
+
+#### 编译源码前的问题
+
+![问题截图](https://ooo.0o0.ooo/2017/03/27/58d8aa2bb6bfe.png)
+
+问题是bison版本太低，直接`brew install bison`然后`bew link bison --force`
+
+安装bison然后重新链接下就可以了。
+
+> **GNU bison** 是属于 [GNU](http://baike.baidu.com/item/GNU) 项目的一个[语法分析器](http://baike.baidu.com/item/%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90%E5%99%A8)生成器。Bison 把一个关于“向前查看 从左到右 最右”(LALR) 上下文无关文法的描述转化成可以分析该文法的 C 或 [C++](http://baike.baidu.com/item/C%2B%2B) 程序。它也可以为二义文法生成 “通用的 从左到右 最右” (GLR)语法分析器。
+>
+> Bison 基本上与 [Yacc](http://baike.baidu.com/item/Yacc) 兼容，并且在 Yacc 之上进行了改进。它经常和 [Flex](http://baike.baidu.com/item/Flex/13973389) （一个自动的[词法分析器](http://baike.baidu.com/item/%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90%E5%99%A8)生成器）一起使用。
+>
+> 此软件的[源代码](http://baike.baidu.com/item/%E6%BA%90%E4%BB%A3%E7%A0%81)是可自由获得的，在 [GPL](http://baike.baidu.com/item/GPL) 下发布。
+
+
+
