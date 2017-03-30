@@ -6,7 +6,6 @@
    >
    > ```
    > FROM mysql:5.6
-   >
    > ```
    >
    > 在项目根目录下运行
@@ -37,3 +36,25 @@
    ```
 
    然后就可以运行成功了。
+
+2. nginx
+
+3. php
+
+4. redis
+
+5. 将所有容器链接起来
+
+   使用docker-compose工具进行操作，首先安装docker-compose
+
+   `sudo pip -U docker-compose //使用sudo是因为我当前用户没有操作/usr/bin目录的权限`
+
+   安装完成可以使用`docker-compose --version` 查看是否成功，但是我有bug体质，一看果然报错。
+
+   ![docker-compose报错截图](https://ooo.0o0.ooo/2017/03/30/58dc6b86a82a2.png)
+
+   google以后找到了解决方案：[stackoverflow链接](http://stackoverflow.com/questions/27630114/matplotlib-issue-on-os-x-importerror-cannot-import-name-thread)，第二回答解决了我的问题，大致意思是我的电脑上的python2.7自带的six模块版本太旧，虽然安装了新的six模块，但是旧版本six模块还在，引用出错，删除掉老版本的six模块就好了。
+
+   ![docker-compose正常安装截图](https://ooo.0o0.ooo/2017/03/30/58dc6c6be6c41.png)
+
+6. 
